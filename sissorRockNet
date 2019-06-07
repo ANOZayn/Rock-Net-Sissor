@@ -1,0 +1,21 @@
+import random
+print("!!!A SIMPLE ROCK SISSORS AND NET GAME!!!")
+move=input("Enter your move:")
+comp=random.choice(["rock","net","sissor"])
+print(comp)
+if move==comp:
+    print("Draw")
+elif comp!="rock" and comp!="net"and move=="rock":
+    print("You won!!!")
+elif comp!="net" and comp!="sissor" and move=="net":
+    print("You win!!!")
+elif comp!="rock" and comp!="sissor"and move=="sissor":
+    print("You won!!!")
+elif comp!="rock" and comp!="sissor" and move=="rock":
+    print("You lose!!!")
+elif comp!="net" and comp!="sissor" and move=="sissor":
+    print("You lose!!!")
+elif comp!="rock" and comp!="net" and move=="net":
+    print("You lose!!!")
+else:
+    print("Invalid move!!!")
